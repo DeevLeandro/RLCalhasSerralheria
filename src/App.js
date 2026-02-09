@@ -18,22 +18,22 @@ function App() {
   const heroSlides = [
     {
       id: 1,
-      title: 'Calhas e Rufos Industriais',
-      subtitle: 'Fabricação e instalação com aço galvanizado de alta qualidade',
+      title: 'Calhas e Rufos',
+      subtitle: 'Fabricação e instalação com ALUMÍNIO e aço galvanizado de alta qualidade.',
       image: '/images/Rufos.jpg',
       cta: 'Solicitar Orçamento'
     },
     {
       id: 2,
       title: 'Estruturas Metálicas Sob Medida',
-      subtitle: 'Projetos personalizados para indústrias e comércios',
+      subtitle: 'Projetos personalizados para indústrias, comércios e residências.',
       image: '/images/Estrutura.jpg',
       cta: 'Solicitar Orçamento'
     },
     {
       id: 3,
       title: 'Coifas e Exaustão Industrial',
-      subtitle: 'Sistemas de ventilação profissional para sua empresa',
+      subtitle: 'Sistemas de ventilação profissional para sua empresa.',
       image: '/images/Coifa.jpg',
       cta: 'Solicitar Orçamento'
     },
@@ -182,8 +182,8 @@ function App() {
   const services = [
     {
       id: 1,
-      name: 'Calhas Industriais',
-      description: 'Fabricação e instalação de calhas em aço galvanizado, zinco e alumínio',
+      name: 'Calhas',
+      description: 'Fabricação e instalação de calhas em alumínio, aço galvanizado e zinco',
       image: '/images/Rufos.jpg'
     },
     {
@@ -194,14 +194,14 @@ function App() {
     },
     {
       id: 3,
-      name: 'Coifas Industriais',
-      description: 'Coifas em aço inox para restaurantes e indústrias alimentícias',
+      name: 'Coifas',
+      description: 'Coifas em Aluminio e aço inox para restaurantes e indústrias alimentícias',
       image: '/images/Coifa.jpg'
     },
     {
       id: 4,
       name: 'Dutos e Chaminés',
-      description: 'Instalação de dutos de ventilação e chaminés industriais',
+      description: 'Instalação de dutos de ventilação, chaminés industriais e residêncial',
       image: '/images/Dutos.jfif'
     },
     {
@@ -425,7 +425,7 @@ function App() {
                 qualidade, durabilidade e excelência em cada projeto.
               </p>
               <p>
-                Especializados em <strong>calhas industriais, estruturas metálicas e serralheria artística</strong>, 
+                Especializados em <strong>calhas, Rufos, Coifas, estruturas metálicas e serralheria artística</strong>, 
                 combinamos técnicas tradicionais com tecnologia moderna para oferecer produtos que unem 
                 funcionalidade e estética. Trabalhamos com materiais premium como aço galvanizado, 
                 inox e alumínio.
