@@ -296,7 +296,7 @@ function App() {
           <div className="logo-container">
             <div className="logo">
               <img 
-                src='/images/logo.png' 
+                src='/images/Logo.png' 
                 alt='Logo RL Calhas Serralheria'
                 className="logo-image"
               />
