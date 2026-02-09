@@ -196,7 +196,7 @@ function App() {
       id: 3,
       name: 'Coifas Industriais',
       description: 'Coifas em aço inox para restaurantes e indústrias alimentícias',
-      image: '/images/coifa.jpg'
+      image: '/images/Coifa.jpg'
     },
     {
       id: 4,
@@ -208,7 +208,7 @@ function App() {
       id: 5,
       name: 'Sistemas de Exaustão',
       description: 'Projeto e instalação de sistemas de exaustão para ambientes industriais',
-      image: '/images/sistema.webp'
+      image: '/images/Sistema.webp'
     },
     {
       id: 6,
@@ -220,7 +220,7 @@ function App() {
       id: 7,
       name: 'Telhados Metálicos',
       description: 'Coberturas metálicas industriais e residenciais com garantia',
-      image: '/images/Telhados.webp'
+      image: '/images/telhados.webp'
     },
     {
       id: 8,
