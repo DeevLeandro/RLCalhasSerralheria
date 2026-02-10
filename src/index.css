@@ -17,6 +17,8 @@ body {
   color: #1a1a1a;
   overflow-x: hidden;
   background-color: #FFFFFF;
+  width: 100%;
+  max-width: 100vw;
 }
 
 /* Palheta de cores da RL Calhas Serralheria */
@@ -36,12 +38,15 @@ body {
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 .section {
@@ -102,6 +107,8 @@ html {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  width: auto;
+  min-width: 0;
 }
 
 .btn::before {
@@ -155,6 +162,7 @@ html {
   z-index: 1000;
   box-shadow: 0 10px 30px rgba(0, 51, 102, 0.3);
   backdrop-filter: blur(10px);
+  width: 100%;
 }
 
 .header .container {
@@ -162,6 +170,7 @@ html {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding: 0 20px;
 }
 
 .logo-container {
@@ -276,7 +285,7 @@ html {
   height: 650px;
   overflow: hidden;
   background: linear-gradient(135deg, #003366a1 0%, #0066ccb4 100%);
-
+  width: 100%;
 }
 
 .carousel-container {
@@ -284,8 +293,6 @@ html {
   width: 100%;
   height: 100%;
   overflow: hidden;
-
-  
 }
 
 .carousel-slide {
@@ -335,6 +342,7 @@ html {
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .carousel-title {
@@ -529,6 +537,7 @@ html {
   border: 2px solid transparent;
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 .service-card::before {
@@ -560,6 +569,7 @@ html {
   height: 300px;
   overflow: hidden;
   border-radius: 23px 23px 0 0;
+  width: 100%;
 }
 
 .service-image img {
@@ -615,6 +625,7 @@ html {
   opacity: 0;
   min-width: 200px;
   text-align: center;
+  width: 100%;
 }
 
 .service-card:hover .btn-service-quick {
@@ -659,6 +670,7 @@ html {
   position: relative;
   overflow: hidden;
   border: 3px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
 }
 
 .cta-container::before {
@@ -718,6 +730,7 @@ html {
   position: relative;
   overflow: hidden;
   max-width: 1400px;
+  width: calc(100% - 40px);
 }
 
 .sobre::before {
@@ -750,10 +763,12 @@ html {
   gap: 80px;
   position: relative;
   z-index: 1;
+  flex-direction: row;
 }
 
 .sobre-text {
   flex: 1;
+  width: 100%;
 }
 
 .sobre-text p {
@@ -850,6 +865,7 @@ html {
 .sobre-image {
   flex: 1;
   position: relative;
+  width: 100%;
 }
 
 .sobre-image img {
@@ -922,6 +938,7 @@ html {
   border: 2px solid transparent;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .testimonial-card::before {
@@ -970,6 +987,7 @@ html {
   padding-top: 25px;
   position: relative;
   z-index: 1;
+  flex-wrap: wrap;
 }
 
 .testimonial-author strong {
@@ -995,6 +1013,7 @@ html {
   max-width: 1400px;
   position: relative;
   overflow: hidden;
+  width: calc(100% - 40px);
 }
 
 .contato::before {
@@ -1019,6 +1038,7 @@ html {
   border: 3px solid var(--azul-claro);
   position: relative;
   z-index: 1;
+  width: calc(100% - 40px);
 }
 
 .contact-form {
@@ -1030,12 +1050,14 @@ html {
 .form-row {
   display: flex;
   gap: 30px;
+  flex-direction: row;
 }
 
 .form-group {
   flex: 1;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .form-group label {
@@ -1066,6 +1088,8 @@ html {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--branco);
   color: var(--cinza-escuro);
+  width: 100%;
+  max-width: 100%;
 }
 
 .form-group input:focus,
@@ -1092,6 +1116,7 @@ html {
   background: linear-gradient(135deg, var(--amarelo), var(--amarelo-escuro));
   color: var(--azul-marinho);
   box-shadow: 0 15px 40px rgba(255, 193, 7, 0.5);
+  width: auto;
 }
 
 .btn-submit:hover {
@@ -1119,6 +1144,7 @@ html {
   border: 3px solid var(--amarelo);
   position: relative;
   z-index: 1;
+  width: calc(100% - 40px);
 }
 
 .success-icon {
@@ -1179,6 +1205,7 @@ html {
   position: relative;
   overflow: hidden;
   margin-top: 80px;
+  width: 100%;
 }
 
 .footer::before {
@@ -1225,6 +1252,7 @@ html {
   align-items: flex-start;
   gap: 15px;
   font-weight: 400;
+  flex-wrap: wrap;
 }
 
 .contact-info p strong {
@@ -1310,6 +1338,7 @@ html {
   display: flex;
   align-items: center;
   gap: 15px;
+  width: 100%;
 }
 
 .social-btn:hover {
@@ -1340,7 +1369,7 @@ html {
   font-weight: 600;
 }
 
-/* Botão flutuante do WhatsApp (adicione este código ao seu JSX) */
+/* Botão flutuante do WhatsApp */
 .floating-whatsapp {
   position: fixed;
   bottom: 30px;
@@ -1376,45 +1405,27 @@ html {
   box-shadow: 0 15px 50px rgba(37, 211, 102, 0.7);
 }
 
-/* Responsividade */
+/* ============================================
+   RESPONSIVIDADE - MOBILE FIRST
+   ============================================ */
+
+/* Dispositivos grandes (desktops menores) */
 @media (max-width: 1200px) {
   .container {
     max-width: 1000px;
+    padding: 0 30px;
   }
   
   .hero-carousel {
-    height: 700px;
+    height: 600px;
   }
   
   .carousel-title {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
   }
   
   .section-title {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .sobre-content {
-    flex-direction: column;
-  }
-
-  .footer-content {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-  }
-
-  .carousel-title {
-    font-size: 3.2rem;
-  }
-
-  .section-title {
-    font-size: 2.3rem;
-  }
-
-  .services-grid {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    font-size: 2.8rem;
   }
   
   .carousel-control {
@@ -1424,15 +1435,88 @@ html {
   }
   
   .carousel-control.prev {
+    left: 25px;
+  }
+  
+  .carousel-control.next {
+    right: 25px;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+  }
+}
+
+/* Tablets e dispositivos médios */
+@media (max-width: 992px) {
+  .sobre-content {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  .carousel-title {
+    font-size: 2.8rem;
+    padding: 0 15px;
+  }
+  
+  .carousel-subtitle {
+    font-size: 1.4rem;
+    padding: 0 25px;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
+  
+  .carousel-control {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .carousel-control.prev {
     left: 20px;
   }
   
   .carousel-control.next {
     right: 20px;
   }
+  
+  .cta-container {
+    padding: 60px 40px;
+    margin-top: 80px;
+  }
+  
+  .cta-container h3 {
+    font-size: 2.2rem;
+  }
+  
+  .contact-form-container {
+    padding: 50px 40px;
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+  }
 }
 
+/* Tablets pequenos e celulares grandes */
 @media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  
   .menu-toggle {
     display: flex;
   }
@@ -1461,11 +1545,11 @@ html {
 
   .nav a {
     margin: 0;
-    padding: 22px 40px;
+    padding: 20px 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     width: 100%;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 600;
   }
 
@@ -1478,36 +1562,45 @@ html {
   }
 
   .nav a.nav-cta {
-    margin: 30px 40px;
-    width: calc(100% - 80px);
+    margin: 25px 30px;
+    width: calc(100% - 60px);
     text-align: center;
-    padding: 18px 30px;
+    padding: 16px 30px;
+    font-size: 1.1rem;
   }
 
   .hero-carousel {
-    height: 600px;
-
+    height: 550px;
   }
-  
 
   .carousel-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    padding: 0 10px;
   }
 
   .carousel-subtitle {
-    font-size: 1.3rem;
-    padding: 0 15px;
+    font-size: 1.2rem;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    line-height: 1.5;
   }
 
   .carousel-buttons {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+    width: 100%;
+    padding: 0 20px;
   }
 
   .carousel-buttons .btn {
-    width: 100%;
+    width: 100% !important;
     max-width: 300px;
+    min-width: unset !important;
+    padding: 16px 30px !important;
+    font-size: 1.1rem !important;
   }
 
   .carousel-control {
@@ -1523,55 +1616,104 @@ html {
   .carousel-control.next {
     right: 15px;
   }
+  
+  .carousel-indicators {
+    bottom: 25px;
+    gap: 15px;
+  }
+  
+  .indicator {
+    width: 14px;
+    height: 14px;
+  }
 
   .section {
     padding: 60px 0;
   }
   
+  .section-title {
+    font-size: 2.2rem;
+    padding: 0 15px;
+  }
+  
   .sobre, .contato {
     border-radius: 30px;
     margin: 30px 20px;
+    width: calc(100% - 40px);
+    padding: 60px 0;
   }
 
   .form-row {
     flex-direction: column;
+    gap: 20px;
   }
 
   .features {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .sobre-stats {
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
   }
   
   .stat-item {
-    min-width: 130px;
-    padding: 25px;
+    min-width: 140px;
+    padding: 20px;
+    flex: 0 1 calc(50% - 20px);
+  }
+  
+  .stat-number {
+    font-size: 2.2rem;
   }
 
   .contact-form-container {
-    padding: 50px 30px;
+    padding: 40px 30px;
     border-radius: 25px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-form {
+    gap: 20px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 16px 20px;
+    font-size: 1rem;
   }
 
   .cta-container {
-    padding: 60px 30px;
+    padding: 50px 30px;
     border-radius: 25px;
-    margin-top: 70px;
+    margin-top: 60px;
   }
   
   .cta-container h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
   .cta-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .cta-container .btn {
+    padding: 18px 40px;
     font-size: 1.2rem;
   }
 
   .footer {
-    padding: 70px 0 30px;
+    padding: 60px 0 30px;
+    margin-top: 60px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
   }
   
   .floating-whatsapp {
@@ -1584,86 +1726,388 @@ html {
     height: 60px;
     font-size: 1.8rem;
   }
-}
-
-@media (max-width: 576px) {
-  .footer-content,
-  .services-grid,
-  .testimonials-grid {
-    grid-template-columns: 1fr;
+  
+  .service-image {
+    height: 250px;
   }
   
-  .footer-content {
-    gap: 40px;
+  .service-info {
+    padding: 25px;
   }
-
-  .carousel-title {
-    font-size: 2.2rem;
+  
+  .service-info h3 {
+    font-size: 1.4rem;
   }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .logo-image {
-    width: 200px;
-  }
-
-  .btn {
-    padding: 15px 30px;
+  
+  .service-info p {
     font-size: 1rem;
   }
-
-  .contact-form-container {
-    padding: 40px 25px;
+  
+  .btn-service-quick {
+    padding: 14px 25px;
+    font-size: 1rem;
+    min-width: 180px;
   }
-
+  
+  .testimonial-card {
+    padding: 30px;
+  }
+  
+  .testimonial-text {
+    font-size: 1.05rem;
+  }
+  
   .success-message {
-    padding: 50px 25px;
+    padding: 50px 30px;
   }
   
   .success-message h3 {
     font-size: 2.2rem;
   }
+  
+  .success-message p {
+    font-size: 1.1rem;
+  }
+}
 
-  .cta-container h3 {
+/* Celulares pequenos (iPhone SE, iPhone 5, etc) */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .logo-image {
+    width: 160px;
+  }
+  
+  .hero-carousel {
+    height: 500px;
+  }
+  
+  .carousel-title {
     font-size: 1.8rem;
+    padding: 0 10px;
   }
-
-  .service-image {
-    height: 250px;
+  
+  .carousel-subtitle {
+    font-size: 1rem;
+    padding: 0 15px;
+    margin-bottom: 30px;
   }
-
+  
+  .carousel-buttons .btn {
+    padding: 14px 25px !important;
+    font-size: 1rem !important;
+    max-width: 280px;
+  }
+  
   .carousel-control {
     width: 45px;
     height: 45px;
     font-size: 1rem;
   }
-
+  
   .carousel-control.prev {
     left: 10px;
   }
-
+  
   .carousel-control.next {
     right: 10px;
   }
   
-  .carousel-indicators {
-    bottom: 25px;
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  
+  .sobre, .contato {
+    margin: 20px 15px;
+    width: calc(100% - 30px);
+    border-radius: 25px;
+    padding: 50px 0;
+  }
+  
+  .sobre-stats {
     gap: 15px;
   }
   
-  .indicator {
-    width: 14px;
-    height: 14px;
+  .stat-item {
+    min-width: 130px;
+    padding: 15px;
+    flex: 0 1 calc(50% - 15px);
   }
   
-  .footer-links a {
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.85rem;
+  }
+  
+  .contact-form-container {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 14px 18px;
+    font-size: 0.95rem;
+  }
+  
+  .btn-submit {
+    padding: 16px 40px;
     font-size: 1.1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .service-card {
+    border-radius: 20px;
+  }
+  
+  .service-image {
+    height: 220px;
+    border-radius: 18px 18px 0 0;
+  }
+  
+  .service-info {
+    padding: 20px;
+  }
+  
+  .service-info h3 {
+    font-size: 1.3rem;
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    padding: 25px;
+    border-radius: 20px;
+  }
+  
+  .testimonial-rating {
+    font-size: 1.5rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+  }
+  
+  .cta-container {
+    padding: 40px 25px;
+    margin-top: 50px;
+  }
+  
+  .cta-container h3 {
+    font-size: 1.6rem;
+  }
+  
+  .cta-container p {
+    font-size: 1rem;
+  }
+  
+  .cta-container .btn {
+    padding: 16px 35px;
+    font-size: 1.1rem;
+  }
+  
+  .footer {
+    padding: 50px 0 25px;
+  }
+  
+  .footer-info h3 {
+    font-size: 2rem;
+  }
+  
+  .footer-links h4,
+  .footer-social h4 {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
   }
   
   .social-btn {
-    padding: 16px 22px;
-    font-size: 1.1rem;
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+  
+  .floating-whatsapp button {
+    width: 55px;
+    height: 55px;
+    font-size: 1.6rem;
+  }
+  
+  .image-badge {
+    padding: 15px 25px;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .image-badge span {
+    font-size: 1.8rem;
+  }
+  
+  .image-badge p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Dispositivos muito pequenos (largura até 375px - iPhone SE) */
+@media (max-width: 375px) {
+  .hero-carousel {
+    height: 450px;
+  }
+  
+  .carousel-title {
+    font-size: 1.6rem;
+  }
+  
+  .carousel-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .carousel-buttons .btn {
+    padding: 12px 20px !important;
+    font-size: 0.95rem !important;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .btn {
+    padding: 14px 25px;
+    font-size: 0.95rem;
+  }
+  
+  .stat-item {
+    min-width: 120px;
+    padding: 12px;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .contact-form-container {
+    padding: 25px 15px;
+  }
+  
+  .sobre, .contato {
+    margin: 15px 10px;
+    width: calc(100% - 20px);
+    border-radius: 20px;
+    padding: 40px 0;
+  }
+  
+  .features li {
+    padding-left: 35px;
+    font-size: 1rem;
+  }
+  
+  .features li::before {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+  }
+  
+  .footer-info h3 {
+    font-size: 1.8rem;
+  }
+  
+  .footer-links a {
+    font-size: 1.05rem;
+  }
+}
+
+/* Ajustes específicos para iPhone (safari) */
+@supports (-webkit-touch-callout: none) {
+  .hero-carousel {
+    height: calc(100vh - 80px);
+    max-height: 700px;
+    min-height: 500px;
+  }
+  
+  .carousel-control {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .btn {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  input, textarea, select {
+    font-size: 16px !important; /* Evita zoom automático no iOS */
+  }
+}
+
+/* Ajustes para landscape em celulares */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-carousel {
+    height: 100vh;
+  }
+  
+  .carousel-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .carousel-buttons .btn {
+    padding: 12px 20px !important;
+    font-size: 0.9rem !important;
+    min-width: 180px;
+  }
+  
+  .nav.open {
+    overflow-y: auto;
+  }
+}
+
+/* Ajustes para telas muito altas */
+@media (min-height: 1000px) {
+  .hero-carousel {
+    height: 700px;
+  }
+}
+
+/* Prevenir overflow horizontal */
+@media (max-width: 767px) {
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
